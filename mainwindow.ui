@@ -17,8 +17,8 @@
    <widget class="QPushButton" name="close">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>90</y>
+      <x>150</x>
+      <y>180</y>
       <width>93</width>
       <height>28</height>
      </rect>
@@ -27,17 +27,17 @@
      <string>Close Window</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QPushButton" name="pushButton">
     <property name="geometry">
      <rect>
-      <x>140</x>
-      <y>150</y>
-      <width>55</width>
-      <height>16</height>
+      <x>90</x>
+      <y>60</y>
+      <width>221</width>
+      <height>51</height>
      </rect>
     </property>
     <property name="text">
-     <string>Status</string>
+     <string>Show Message</string>
     </property>
    </widget>
   </widget>
@@ -63,5 +63,22 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>close</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>220</x>
+     <y>233</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>307</x>
+     <y>252</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
